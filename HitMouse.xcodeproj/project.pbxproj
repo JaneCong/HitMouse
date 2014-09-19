@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB43A4F01999B2FB002DBF77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4EF1999B2FB002DBF77 /* Foundation.framework */; };
+		CB43A4F21999B2FB002DBF77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4F11999B2FB002DBF77 /* CoreGraphics.framework */; };
+		CB43A4F41999B2FB002DBF77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4F31999B2FB002DBF77 /* UIKit.framework */; };
+		CB43A4F61999B2FB002DBF77 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4F51999B2FB002DBF77 /* SpriteKit.framework */; };
+		CB43A4FC1999B2FB002DBF77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB43A4FA1999B2FB002DBF77 /* InfoPlist.strings */; };
+		CB43A4FE1999B2FB002DBF77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A4FD1999B2FB002DBF77 /* main.m */; };
+		CB43A5021999B2FB002DBF77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A5011999B2FB002DBF77 /* AppDelegate.m */; };
+		CB43A5051999B2FB002DBF77 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5031999B2FB002DBF77 /* Main_iPhone.storyboard */; };
+		CB43A5081999B2FB002DBF77 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5061999B2FB002DBF77 /* Main_iPad.storyboard */; };
+		CB43A50B1999B2FB002DBF77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A50A1999B2FB002DBF77 /* ViewController.m */; };
+		CB43A50E1999B2FB002DBF77 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A50D1999B2FB002DBF77 /* MyScene.m */; };
+		CB43A5101999B2FB002DBF77 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = CB43A50F1999B2FB002DBF77 /* Spaceship.png */; };
+		CB43A5121999B2FB002DBF77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5111999B2FB002DBF77 /* Images.xcassets */; };
+		CB43A5191999B2FB002DBF77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A5181999B2FB002DBF77 /* XCTest.framework */; };
+		CB43A51A1999B2FB002DBF77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4EF1999B2FB002DBF77 /* Foundation.framework */; };
+		CB43A51B1999B2FB002DBF77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB43A4F31999B2FB002DBF77 /* UIKit.framework */; };
+		CB43A5231999B2FB002DBF77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5211999B2FB002DBF77 /* InfoPlist.strings */; };
+		CB43A5251999B2FB002DBF77 /* HitMouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A5241999B2FB002DBF77 /* HitMouseTests.m */; };
+		CB43A53F1999B33D002DBF77 /* laugh.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB43A52F1999B33D002DBF77 /* laugh.caf */; };
+		CB43A5401999B33D002DBF77 /* ow.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5301999B33D002DBF77 /* ow.caf */; };
+		CB43A5411999B33D002DBF77 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5311999B33D002DBF77 /* whack.caf */; };
+		CB43A5421999B33D002DBF77 /* background-ipad.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5341999B33D002DBF77 /* background-ipad.atlas */; };
+		CB43A5431999B33D002DBF77 /* foreground-ipad.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5351999B33D002DBF77 /* foreground-ipad.atlas */; };
+		CB43A5441999B33D002DBF77 /* sprites-ipad.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5361999B33D002DBF77 /* sprites-ipad.atlas */; };
+		CB43A5451999B33D002DBF77 /* background.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5381999B33D002DBF77 /* background.atlas */; };
+		CB43A5461999B33D002DBF77 /* foreground.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A5391999B33D002DBF77 /* foreground.atlas */; };
+		CB43A5471999B33D002DBF77 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A53A1999B33D002DBF77 /* sprites.atlas */; };
+		CB43A5481999B33D002DBF77 /* background-568.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A53C1999B33D002DBF77 /* background-568.atlas */; };
+		CB43A5491999B33D002DBF77 /* foreground-568.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A53D1999B33D002DBF77 /* foreground-568.atlas */; };
+		CB43A54A1999B33D002DBF77 /* sprites-568.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB43A53E1999B33D002DBF77 /* sprites-568.atlas */; };
+		CB43A5521999B693002DBF77 /* SKTextureAtlas+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A5511999B693002DBF77 /* SKTextureAtlas+Helper.m */; };
+		CB43A5551999D120002DBF77 /* Mole.m in Sources */ = {isa = PBXBuildFile; fileRef = CB43A5541999D120002DBF77 /* Mole.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB43A51C1999B2FB002DBF77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB43A4E41999B2FB002DBF77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB43A4EB1999B2FB002DBF77;
+			remoteInfo = HitMouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB43A4EC1999B2FB002DBF77 /* HitMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB43A4EF1999B2FB002DBF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB43A4F11999B2FB002DBF77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB43A4F31999B2FB002DBF77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB43A4F51999B2FB002DBF77 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CB43A4F91999B2FB002DBF77 /* HitMouse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HitMouse-Info.plist"; sourceTree = "<group>"; };
+		CB43A4FB1999B2FB002DBF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB43A4FD1999B2FB002DBF77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB43A4FF1999B2FB002DBF77 /* HitMouse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HitMouse-Prefix.pch"; sourceTree = "<group>"; };
+		CB43A5001999B2FB002DBF77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB43A5011999B2FB002DBF77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB43A5041999B2FB002DBF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CB43A5071999B2FB002DBF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CB43A5091999B2FB002DBF77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB43A50A1999B2FB002DBF77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB43A50C1999B2FB002DBF77 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		CB43A50D1999B2FB002DBF77 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		CB43A50F1999B2FB002DBF77 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		CB43A5111999B2FB002DBF77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB43A5171999B2FB002DBF77 /* HitMouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitMouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB43A5181999B2FB002DBF77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CB43A5201999B2FB002DBF77 /* HitMouseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HitMouseTests-Info.plist"; sourceTree = "<group>"; };
+		CB43A5221999B2FB002DBF77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB43A5241999B2FB002DBF77 /* HitMouseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitMouseTests.m; sourceTree = "<group>"; };
+		CB43A52F1999B33D002DBF77 /* laugh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = laugh.caf; sourceTree = "<group>"; };
+		CB43A5301999B33D002DBF77 /* ow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ow.caf; sourceTree = "<group>"; };
+		CB43A5311999B33D002DBF77 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		CB43A5341999B33D002DBF77 /* background-ipad.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "background-ipad.atlas"; sourceTree = "<group>"; };
+		CB43A5351999B33D002DBF77 /* foreground-ipad.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "foreground-ipad.atlas"; sourceTree = "<group>"; };
+		CB43A5361999B33D002DBF77 /* sprites-ipad.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "sprites-ipad.atlas"; sourceTree = "<group>"; };
+		CB43A5381999B33D002DBF77 /* background.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = background.atlas; sourceTree = "<group>"; };
+		CB43A5391999B33D002DBF77 /* foreground.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = foreground.atlas; sourceTree = "<group>"; };
+		CB43A53A1999B33D002DBF77 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		CB43A53C1999B33D002DBF77 /* background-568.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "background-568.atlas"; sourceTree = "<group>"; };
+		CB43A53D1999B33D002DBF77 /* foreground-568.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "foreground-568.atlas"; sourceTree = "<group>"; };
+		CB43A53E1999B33D002DBF77 /* sprites-568.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "sprites-568.atlas"; sourceTree = "<group>"; };
+		CB43A5501999B693002DBF77 /* SKTextureAtlas+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKTextureAtlas+Helper.h"; sourceTree = "<group>"; };
+		CB43A5511999B693002DBF77 /* SKTextureAtlas+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKTextureAtlas+Helper.m"; sourceTree = "<group>"; };
+		CB43A5531999D120002DBF77 /* Mole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mole.h; sourceTree = "<group>"; };
+		CB43A5541999D120002DBF77 /* Mole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB43A4E91999B2FB002DBF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A4F21999B2FB002DBF77 /* CoreGraphics.framework in Frameworks */,
+				CB43A4F41999B2FB002DBF77 /* UIKit.framework in Frameworks */,
+				CB43A4F61999B2FB002DBF77 /* SpriteKit.framework in Frameworks */,
+				CB43A4F01999B2FB002DBF77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB43A5141999B2FB002DBF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A5191999B2FB002DBF77 /* XCTest.framework in Frameworks */,
+				CB43A51B1999B2FB002DBF77 /* UIKit.framework in Frameworks */,
+				CB43A51A1999B2FB002DBF77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB43A4E31999B2FB002DBF77 = {
+			isa = PBXGroup;
+			children = (
+				CB43A4F71999B2FB002DBF77 /* HitMouse */,
+				CB43A51E1999B2FB002DBF77 /* HitMouseTests */,
+				CB43A4EE1999B2FB002DBF77 /* Frameworks */,
+				CB43A4ED1999B2FB002DBF77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB43A4ED1999B2FB002DBF77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A4EC1999B2FB002DBF77 /* HitMouse.app */,
+				CB43A5171999B2FB002DBF77 /* HitMouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB43A4EE1999B2FB002DBF77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A4EF1999B2FB002DBF77 /* Foundation.framework */,
+				CB43A4F11999B2FB002DBF77 /* CoreGraphics.framework */,
+				CB43A4F31999B2FB002DBF77 /* UIKit.framework */,
+				CB43A4F51999B2FB002DBF77 /* SpriteKit.framework */,
+				CB43A5181999B2FB002DBF77 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB43A4F71999B2FB002DBF77 /* HitMouse */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A54C1999B4F6002DBF77 /* Category */,
+				CB43A5001999B2FB002DBF77 /* AppDelegate.h */,
+				CB43A5011999B2FB002DBF77 /* AppDelegate.m */,
+				CB43A5031999B2FB002DBF77 /* Main_iPhone.storyboard */,
+				CB43A5061999B2FB002DBF77 /* Main_iPad.storyboard */,
+				CB43A5091999B2FB002DBF77 /* ViewController.h */,
+				CB43A50A1999B2FB002DBF77 /* ViewController.m */,
+				CB43A50C1999B2FB002DBF77 /* MyScene.h */,
+				CB43A50D1999B2FB002DBF77 /* MyScene.m */,
+				CB43A5531999D120002DBF77 /* Mole.h */,
+				CB43A5541999D120002DBF77 /* Mole.m */,
+				CB43A50F1999B2FB002DBF77 /* Spaceship.png */,
+				CB43A5111999B2FB002DBF77 /* Images.xcassets */,
+				CB43A4F81999B2FB002DBF77 /* Supporting Files */,
+			);
+			path = HitMouse;
+			sourceTree = "<group>";
+		};
+		CB43A4F81999B2FB002DBF77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A54B1999B385002DBF77 /* Resources */,
+				CB43A4F91999B2FB002DBF77 /* HitMouse-Info.plist */,
+				CB43A4FA1999B2FB002DBF77 /* InfoPlist.strings */,
+				CB43A4FD1999B2FB002DBF77 /* main.m */,
+				CB43A4FF1999B2FB002DBF77 /* HitMouse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB43A51E1999B2FB002DBF77 /* HitMouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5241999B2FB002DBF77 /* HitMouseTests.m */,
+				CB43A51F1999B2FB002DBF77 /* Supporting Files */,
+			);
+			path = HitMouseTests;
+			sourceTree = "<group>";
+		};
+		CB43A51F1999B2FB002DBF77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5201999B2FB002DBF77 /* HitMouseTests-Info.plist */,
+				CB43A5211999B2FB002DBF77 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB43A52E1999B33D002DBF77 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A52F1999B33D002DBF77 /* laugh.caf */,
+				CB43A5301999B33D002DBF77 /* ow.caf */,
+				CB43A5311999B33D002DBF77 /* whack.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		CB43A5321999B33D002DBF77 /* TextureAtlases */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5331999B33D002DBF77 /* iPad */,
+				CB43A5371999B33D002DBF77 /* iPhone */,
+				CB43A53B1999B33D002DBF77 /* WidescreeniPhone */,
+			);
+			path = TextureAtlases;
+			sourceTree = "<group>";
+		};
+		CB43A5331999B33D002DBF77 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5341999B33D002DBF77 /* background-ipad.atlas */,
+				CB43A5351999B33D002DBF77 /* foreground-ipad.atlas */,
+				CB43A5361999B33D002DBF77 /* sprites-ipad.atlas */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		CB43A5371999B33D002DBF77 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5381999B33D002DBF77 /* background.atlas */,
+				CB43A5391999B33D002DBF77 /* foreground.atlas */,
+				CB43A53A1999B33D002DBF77 /* sprites.atlas */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		CB43A53B1999B33D002DBF77 /* WidescreeniPhone */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A53C1999B33D002DBF77 /* background-568.atlas */,
+				CB43A53D1999B33D002DBF77 /* foreground-568.atlas */,
+				CB43A53E1999B33D002DBF77 /* sprites-568.atlas */,
+			);
+			path = WidescreeniPhone;
+			sourceTree = "<group>";
+		};
+		CB43A54B1999B385002DBF77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A52E1999B33D002DBF77 /* Sounds */,
+				CB43A5321999B33D002DBF77 /* TextureAtlases */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CB43A54C1999B4F6002DBF77 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CB43A5501999B693002DBF77 /* SKTextureAtlas+Helper.h */,
+				CB43A5511999B693002DBF77 /* SKTextureAtlas+Helper.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB43A4EB1999B2FB002DBF77 /* HitMouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB43A5281999B2FB002DBF77 /* Build configuration list for PBXNativeTarget "HitMouse" */;
+			buildPhases = (
+				CB43A4E81999B2FB002DBF77 /* Sources */,
+				CB43A4E91999B2FB002DBF77 /* Frameworks */,
+				CB43A4EA1999B2FB002DBF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitMouse;
+			productName = HitMouse;
+			productReference = CB43A4EC1999B2FB002DBF77 /* HitMouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB43A5161999B2FB002DBF77 /* HitMouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB43A52B1999B2FB002DBF77 /* Build configuration list for PBXNativeTarget "HitMouseTests" */;
+			buildPhases = (
+				CB43A5131999B2FB002DBF77 /* Sources */,
+				CB43A5141999B2FB002DBF77 /* Frameworks */,
+				CB43A5151999B2FB002DBF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB43A51D1999B2FB002DBF77 /* PBXTargetDependency */,
+			);
+			name = HitMouseTests;
+			productName = HitMouseTests;
+			productReference = CB43A5171999B2FB002DBF77 /* HitMouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB43A4E41999B2FB002DBF77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "L了个G";
+				TargetAttributes = {
+					CB43A5161999B2FB002DBF77 = {
+						TestTargetID = CB43A4EB1999B2FB002DBF77;
+					};
+				};
+			};
+			buildConfigurationList = CB43A4E71999B2FB002DBF77 /* Build configuration list for PBXProject "HitMouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB43A4E31999B2FB002DBF77;
+			productRefGroup = CB43A4ED1999B2FB002DBF77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB43A4EB1999B2FB002DBF77 /* HitMouse */,
+				CB43A5161999B2FB002DBF77 /* HitMouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB43A4EA1999B2FB002DBF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A5471999B33D002DBF77 /* sprites.atlas in Resources */,
+				CB43A5421999B33D002DBF77 /* background-ipad.atlas in Resources */,
+				CB43A5491999B33D002DBF77 /* foreground-568.atlas in Resources */,
+				CB43A5441999B33D002DBF77 /* sprites-ipad.atlas in Resources */,
+				CB43A5101999B2FB002DBF77 /* Spaceship.png in Resources */,
+				CB43A5431999B33D002DBF77 /* foreground-ipad.atlas in Resources */,
+				CB43A5401999B33D002DBF77 /* ow.caf in Resources */,
+				CB43A5121999B2FB002DBF77 /* Images.xcassets in Resources */,
+				CB43A53F1999B33D002DBF77 /* laugh.caf in Resources */,
+				CB43A5081999B2FB002DBF77 /* Main_iPad.storyboard in Resources */,
+				CB43A5461999B33D002DBF77 /* foreground.atlas in Resources */,
+				CB43A54A1999B33D002DBF77 /* sprites-568.atlas in Resources */,
+				CB43A5051999B2FB002DBF77 /* Main_iPhone.storyboard in Resources */,
+				CB43A5481999B33D002DBF77 /* background-568.atlas in Resources */,
+				CB43A4FC1999B2FB002DBF77 /* InfoPlist.strings in Resources */,
+				CB43A5411999B33D002DBF77 /* whack.caf in Resources */,
+				CB43A5451999B33D002DBF77 /* background.atlas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB43A5151999B2FB002DBF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A5231999B2FB002DBF77 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB43A4E81999B2FB002DBF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A5551999D120002DBF77 /* Mole.m in Sources */,
+				CB43A50E1999B2FB002DBF77 /* MyScene.m in Sources */,
+				CB43A50B1999B2FB002DBF77 /* ViewController.m in Sources */,
+				CB43A5021999B2FB002DBF77 /* AppDelegate.m in Sources */,
+				CB43A4FE1999B2FB002DBF77 /* main.m in Sources */,
+				CB43A5521999B693002DBF77 /* SKTextureAtlas+Helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB43A5131999B2FB002DBF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB43A5251999B2FB002DBF77 /* HitMouseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB43A51D1999B2FB002DBF77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB43A4EB1999B2FB002DBF77 /* HitMouse */;
+			targetProxy = CB43A51C1999B2FB002DBF77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB43A4FA1999B2FB002DBF77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB43A4FB1999B2FB002DBF77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB43A5031999B2FB002DBF77 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB43A5041999B2FB002DBF77 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CB43A5061999B2FB002DBF77 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB43A5071999B2FB002DBF77 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CB43A5211999B2FB002DBF77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB43A5221999B2FB002DBF77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB43A5261999B2FB002DBF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB43A5271999B2FB002DBF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB43A5291999B2FB002DBF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HitMouse/HitMouse-Prefix.pch";
+				INFOPLIST_FILE = "HitMouse/HitMouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB43A52A1999B2FB002DBF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HitMouse/HitMouse-Prefix.pch";
+				INFOPLIST_FILE = "HitMouse/HitMouse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CB43A52C1999B2FB002DBF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HitMouse.app/HitMouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HitMouse/HitMouse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HitMouseTests/HitMouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CB43A52D1999B2FB002DBF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HitMouse.app/HitMouse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HitMouse/HitMouse-Prefix.pch";
+				INFOPLIST_FILE = "HitMouseTests/HitMouseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB43A4E71999B2FB002DBF77 /* Build configuration list for PBXProject "HitMouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB43A5261999B2FB002DBF77 /* Debug */,
+				CB43A5271999B2FB002DBF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB43A5281999B2FB002DBF77 /* Build configuration list for PBXNativeTarget "HitMouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB43A5291999B2FB002DBF77 /* Debug */,
+				CB43A52A1999B2FB002DBF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB43A52B1999B2FB002DBF77 /* Build configuration list for PBXNativeTarget "HitMouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB43A52C1999B2FB002DBF77 /* Debug */,
+				CB43A52D1999B2FB002DBF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB43A4E41999B2FB002DBF77 /* Project object */;
+}
